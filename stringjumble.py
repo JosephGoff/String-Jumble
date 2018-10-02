@@ -46,8 +46,8 @@ print(reverse)
 print(' '.join(wordsbackwards))
 characterreverse = words
 for a in range(0, len(characterreverse), 1):
-    wordrev = ""
+    wordreverse = ""
     for b in (characterreverse[a]):
-        wordreverse= b + wordreverse
+        wordreverse = b + wordreverse
     characterreverse[a] = wordreverse
 print(' '.join(characterreverse))
