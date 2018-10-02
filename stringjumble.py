@@ -25,3 +25,41 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+string = input("Please enter a string of text (the bigger the better): ")
+
+print("You entered " +'"' + string +'"'+ ". Now jumble it:")
+word= ""
+words = []
+wordsbackwards=[]
+
+for x in string:
+        if x == " ":
+            words.append(word)
+            word=""
+        else:
+            word = word + x
+              
+words.append(word)
+
+
+
+for m in range(len(words)-1, -1, -1):
+    wordsbackwards.append(words[m])
+
+rev= "" 
+for x in string:
+    rev = x + rev
+            
+print(rev)
+
+print(' '.join(wordsbackwards))
+
+characterrev = words
+
+for a in range(0, len(characterrev), 1):
+    wordrev = ""
+    for b in (characterrev[a]):
+        wordrev= b + wordrev
+    characterrev[a] = wordrev
+
+print(' '.join(characterrev))
